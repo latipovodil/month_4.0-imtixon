@@ -14,16 +14,18 @@ export function like() {
     best_bottom.style.display = "none";
     basket.style.display = "none";
   });
-
+if (like_arr) {
   like_count.textContent = like_arr.length + 1;
+}
   let add_like = document.querySelectorAll(".like1");
   let remove_like = document.querySelectorAll(".like2");
   for (const i of add_like) {
     i.addEventListener("click", () => {
       if (localStorage.getItem("like")) {
         let like_arr = JSON.parse(localStorage.getItem("like"));
-
-        like_count.textContent = like_arr.length + 1;
+if (like_arr) {
+  like_count.textContent = like_arr.length + 1;
+}
 
         if (like_arr.length) {
           for (let j = 0; j < like_arr.length; j++) {
@@ -50,6 +52,10 @@ export function like() {
 
   for (const i of remove_like) {
     i.addEventListener("click", () => {
+      let like_arr = JSON.parse(localStorage.getItem("like"));
+      if (like_arr) {
+        like_count.textContent = like_arr.length + 1;
+      }
       if (localStorage.getItem("like")) {
         let like_arr = JSON.parse(localStorage.getItem("like"));
         if (like_arr.length) {
@@ -76,6 +82,10 @@ let like_main = document.querySelector('.like__main')
       for (const i of products_id) {
         for (const j of data) {
           if (i == j.id) {
+            let like_arr = JSON.parse(localStorage.getItem("like"));
+            if (like_arr) {
+              like_count.textContent = like_arr.length + 1;
+            }
             like_main.innerHTML += `
             <div id="${j.id}" class="basket__main-product1">
             <button id="${
@@ -142,6 +152,10 @@ let like_main = document.querySelector('.like__main')
     let basket__main_plus = document.querySelectorAll(".basket__main-plus");
     let basket__main_money = document.querySelectorAll(".basket__main-money");
     for (const i of basket__main_plus) {
+      let like_arr = JSON.parse(localStorage.getItem("like"));
+      if (like_arr) {
+        like_count.textContent = like_arr.length + 1;
+      }
       i.addEventListener("click", () => {
         for (let j = 0; j < basket__main_unit_price.length; j++) {
           if (i.id == basket__main_unit_price[j].id) {
@@ -229,6 +243,10 @@ let like_main = document.querySelector('.like__main')
 
     for (const i of basket__main_remove_btn) {
       i.addEventListener("click", () => {
+        let like_arr = JSON.parse(localStorage.getItem("like"));
+        if (like_arr) {
+          like_count.textContent = like_arr.length + 1;
+        }
         let basket_arr = JSON.parse(localStorage.getItem("like"));
         for (let j = 0; j < basket_arr.length; j++) {
           if (basket_arr[j] * 1 == i.id) {

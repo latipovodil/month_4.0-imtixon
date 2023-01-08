@@ -1,3 +1,5 @@
+
+
 export function basket_page() {
   let add_basket = document.querySelectorAll(".basket1");
   let remove_basket = document.querySelectorAll(".basket2");
@@ -10,7 +12,7 @@ export function basket_page() {
         let header__top_count = document.querySelector(
           ".header__top-right-count"
         );
-        header__top_count.textContent = basket_arr.length
+        header__top_count.textContent = basket_arr.length + 1;
 
         if (basket_arr.length) {
           for (let j = 0; j < basket_arr.length; j++) {
