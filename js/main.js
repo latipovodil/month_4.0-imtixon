@@ -1,0 +1,14 @@
+import { slide } from "./slide/slide.js";
+import { hero } from "./sections/hero.js";
+import { best } from "./sections/best.js";
+import { footer } from "./sections/footer.js";
+import { header } from "./sections/header.js";
+import { basket_page } from "./sections/basket.js";
+import { like } from "./sections/like.js";
+import { small_slide } from "./sections/small_slider.js";
+header();
+hero();
+best(basket_page, like);
+footer();
+slide();
+small_slide();

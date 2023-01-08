@@ -1,0 +1,267 @@
+header {
+  margin-top: 20px;
+}
+
+.header__top-money {
+  display: flex;
+  align-items: center;
+}
+
+.header__top-moneys:nth-child(2) {
+  margin-left: 15px;
+}
+
+.header__select {
+  border-radius: 4px;
+  border: none;
+}
+
+.header__top-right-profile {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #262626;
+}
+
+.header__top-right-profile::before {
+  content: "";
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url("../imgs/header_top_user.svg");
+  width: 20px;
+  height: 20px;
+  margin-bottom: -2px;
+  margin-right: 7px;
+}
+
+.header__top-right-btn {
+  border: none;
+  background-color: transparent;
+  position: relative;
+  margin-left: 30px;
+}
+
+.header__top-right-count {
+  border-radius: 50%;
+  padding: 2px;
+  background-color: #fb7181;
+  font-size: 10px;
+  width: 15px;
+  position: absolute;
+  top: -2px;
+  left: 18px;
+}
+
+.header__top-right-search {
+  border: none;
+  background-color: transparent;
+  margin-left: 30px;
+}
+
+.header__top-right {
+  display: flex;
+  align-items: center;
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+  padding-bottom: 15px;
+}
+
+.header__bottom {
+  margin-top: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__nav-link {
+  padding: 18px 16px;
+  color: #ffffff;
+  border-radius: 100px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.header__nav-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.header__nav-link1::after,
+.header__nav-link2::after,
+.header__nav-link3::after {
+  content: "";
+  background-repeat: no-repeat;
+  background-image: url("../imgs/nav-icon.svg");
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background-position: center;
+  margin-left: 5px;
+}
+.about__menu,
+.location__menu,
+.first__menu {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  padding: 5px;
+  position: absolute;
+  z-index: 2;
+  background-color: #fff;
+  display: none;
+  top: 50px;
+}
+.about__menu-items {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 18px 16px;
+}
+
+.header__nav-items {
+  position: relative;
+}
+
+.about__menu-items > a {
+  color: #000000;
+}
+
+.about__menu-items:hover {
+  border-radius: 100px;
+  background-color: #f5f5f5;
+  transition-duration: 0.3s;
+}
+
+.about__menu-items:active {
+  background-color: #299764;
+  border-radius: 100px;
+  transition-duration: 0.3s;
+  > a {
+    color: #ffffff;
+    transition-duration: 0.3s;
+  }
+}
+
+.about__menu:hover,
+.location__menu:hover,
+.first__menu {
+  display: block;
+}
+.header__nav-link2:hover::after,
+.header__nav-link1:hover::after {
+  transition-duration: 0.4s;
+  transform: rotate(180deg);
+}
+
+.header__nav-link3:hover::after {
+  transition-duration: 0.4s;
+  transform: rotate(180deg);
+}
+
+.header__nav-link2:hover + .about__menu {
+  display: block;
+}
+.header__nav-link3:hover + .location__menu {
+  display: block;
+}
+
+.first__menu {
+  display: none;
+}
+
+.header__nav-link1:hover + .first__menu {
+  display: block;
+}
+
+.location__menu,
+.about__menu,
+.first__menu {
+  z-index: 20;
+}
+
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 500;
+  background-color: #fff;
+  top: -6%;
+  padding-top: 20px;
+}
+main {
+  margin-top: 152px;
+}
+
+.dark_mode {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  display: inline-block;
+  margin-right: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  > img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.dark_mode_color {
+  * {
+    color: #fff;
+  }
+}
+
+.like_page {
+  border: none;
+  background-color: transparent;
+  margin-right: 40px;
+  margin-top: 2px;
+  width: 30px;
+  height: 30px;
+  > img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.like_count {
+  border-radius: 50%;
+  padding: 2px;
+  background-color: #fb7181;
+  font-size: 10px;
+  width: 15px;
+  position: absolute;
+  top: 2px;
+  left: 26px;
+  text-align: center;
+}
+
+.like_page-box {
+  position: relative;
+}
+
+
+.like_page-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.like_page-section{
+  display: none;
+}

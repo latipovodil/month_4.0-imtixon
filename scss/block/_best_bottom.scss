@@ -1,0 +1,46 @@
+.best-bottom__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 40px;
+  color: #22262a;
+  margin-bottom: 80px;
+}
+
+.best-bottom__items:nth-child(1) > a > p::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-image: url("../imgs/fura.svg");
+  width: 100px;
+  height: 65px;
+  display: flex;
+  margin-left: 30px;
+  margin-bottom: 40px;
+}
+.best-bottom__items:nth-child(2) > a > p::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-image: url("../imgs/dollar.svg");
+  width: 69px;
+  height: 79px;
+  display: flex;
+  margin-left: 48px;
+  margin-bottom: 40px;
+}
+.best-bottom__items:nth-child(3) > a > p::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-image: url("../imgs/admistrator.svg");
+  width: 68px;
+  height: 88px;
+  display: flex;
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+.best-bottom__items {
+  > a {
+    color: #22262a;
+  }
+}

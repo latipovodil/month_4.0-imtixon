@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="./imgs/icon-js.png" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/normalise.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Online shop</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container header__container">
+          <div class="header__top">
+            <div class="header__top-left">
+              <select
+                name="header__select"
+                id="header__select"
+                class="header__select"
+              >
+                <option selected value="ENG">ENG</option>
+                <option value="RU">RU</option>
+                <option value="FR">FR</option>
+                <option value="UZ">UZ</option>
+                <option value="KZ">KZ</option>
+              </select>
+              <select
+                name="header__select"
+                id="header__select"
+                class="header__select"
+              >
+                <option selected value="ENG">USD</option>
+                <option value="RU">RU</option>
+                <option value="FR">FR</option>
+                <option value="UZ">UZ</option>
+                <option value="KZ">KZ</option>
+              </select>
+            </div>
+
+            <div class="header__top-right">
+              <div class="like_page-box">
+                <button type="button" class="like_page">
+                  <img src="./imgs/like1.svg" alt="like_page" />
+                </button>
+                <p class="like_count">0</p>
+              </div>
+
+              <a class="a header__top-right-profile" href="#">My profile</a>
+
+              <button class="header__top-right-btn" type="button">
+                <img
+                  class="header__top-right-img"
+                  src="./imgs/korzinka.svg"
+                  alt="korzinkacha"
+                />
+                <p class="p header__top-right-count">0</p>
+              </button>
+
+              <button class="header__top-right-search">
+                <img
+                  class="header__top-right-search-icon"
+                  src="./imgs/search-icon.svg"
+                  alt="search-icon"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="header__bottom">
+            <div class="header__bottom-logo-box">
+              <a class="a" href="./index.html"
+                ><img src="./imgs/logojon.svg" alt="logojon"
+              /></a>
+            </div>
+
+            <nav class="header__nav header__nav-res">
+              <ul class="header__nav-box">
+                <li class="header__nav-items">
+                  <a class="a header__nav-link header__nav-link1" href="#"
+                    >About Us</a
+                  >
+                  <ul class="first__menu">
+                    <li class="about__menu-items">
+                      <a class="a" href="#">News</a>
+                    </li>
+                    <li class="about__menu-items">
+                      <a class="a" href="#">Careers</a>
+                    </li>
+                    <li class="about__menu-items">
+                      <a class="a" href="#">Locations</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="header__nav-items">
+                  <a class="a header__nav-link header__nav-link2" href="#"
+                    >Contact</a
+                  >
+                  <ul class="about__menu">
+                    <li class="about__menu-items">
+                      <a class="a" href="#">News</a>
+                    </li>
+                    <li class="about__menu-items">
+                      <a class="a" href="#">Careers</a>
+                    </li>
+                    <li class="about__menu-items">
+                      <a class="a" href="#">Locations</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="header__nav-items">
+                  <a class="a header__nav-link header__nav-link3" href="#"
+                    >Help center</a
+                  >
+                  <ul class="location__menu">
+                    <li class="about__menu-items">
+                      <a class="a" href="#">News</a>
+                    </li>
+                    <li class="about__menu-items">
+                      <a class="a" href="#">Careers</a>
+                    </li>
+                    <li class="about__menu-items">
+                      <a class="a" href="#">Locations</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero__container">
+            <div style="position: relative" class="hero__slide">
+              <div>
+                <img
+                  class="hero__slide-imgs"
+                  src="./imgs/slider1.jpg"
+                  alt="imgs"
+                />
+              </div>
+              <div>
+                <img
+                  class="hero__slide-imgs"
+                  src="./imgs/slider2.jpg"
+                  alt="imgs"
+                />
+              </div>
+              <div>
+                <img
+                  class="hero__slide-imgs"
+                  src="./imgs/slider3.jpg"
+                  alt="imgs"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__bottom-container">
+            <div style="position: relative" class="hero__bottom-slide">
+              <div class="small-slide"></div>
+              <div class="small-slide"></div>
+              <div class="small-slide"></div>
+              <div class="small-slide"></div>
+              <div class="small-slide"></div>
+              <div class="small-slide"></div>
+              <div class="small-slide"></div>
+              <div class="small-slide"></div>
+              <div class="small-slide"></div>
+              <div class="small-slide"></div>
+              <div class="small-slide"></div>
+              <div class="small-slide"></div>
+              <div class="small-slide"></div>
+              <div class="small-slide"></div>
+              <div class="small-slide"></div>
+              <div class="small-slide"></div>
+              <div class="small-slide"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="best">
+          <div class="container best__container">
+            <h2 class="best__title">BEST SELLER</h2>
+
+            <nav>
+              <ul class="best__nav">
+                <li class="best__catigories-all">All</li>
+                <li class="best__catigories"></li>
+                <li class="best__catigories"></li>
+                <li class="best__catigories"></li>
+                <li class="best__catigories"></li>
+              </ul>
+            </nav>
+
+            <div class="best__search">
+              <input
+                placeholder="Search query..."
+                aria-placeholder="Search query..."
+                class="best__search-input"
+                type="text"
+              />
+              <button class="best__search-btn" type="button">Search</button>
+            </div>
+
+            <ul class="best__main"></ul>
+            <button class="best__main-all-items" type="button">
+              LOAD MORE
+            </button>
+          </div>
+        </section>
+
+        <section class="best-bottom">
+          <div class="container bes-bottom__container">
+            <ul class="best-bottom__box">
+              <li class="best-bottom__items">
+                <a class="a" href="#"><p>FREE SHIPPING</p></a>
+              </li>
+              <li class="best-bottom__items">
+                <a class="a" href="#"><p>100% REFUND</p></a>
+              </li>
+              <li class="best-bottom__items">
+                <a class="a" href="#"><p>SUPPORT 24/7</p></a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="like_page-section">
+            <div class="container basket__container like__container">
+              <div class="basket__search">
+                <input
+                  class="basket__search-input"
+                  placeholder="Search the BASKET"
+                  type="text"
+                />
+                <button type="button" class="basket__search-btn">Search</button>
+              </div>
+  
+              <div class="basket__product-table">
+                <div class="basket__product-table-menu">
+                  <p class="p basket__product-table-menu-text">PRODUCT</p>
+                  <div class="basket__product-table-menu-r">
+                    <p class="p basket__product-table-menu-text">PRICE</p>
+                    <p class="p basket__product-table-menu-text">QTY</p>
+                    <p class="p basket__product-table-menu-text">UNIT PRICE</p>
+                  </div>
+                </div>
+  
+                <div class="like__main"></div>
+  
+                <div class="basket__buy">
+                  <div class="basket__buy-text-box">
+                    <div class="basket__buy-text-boxes">
+                      <p class="p basket__buy-texts">Subtotal</p>
+                      <p class="p basket__buy-texts">$0</p>
+                    </div>
+                    <div class="basket__buy-text-boxes">
+                      <p class="p basket__buy-texts">Shipping fee</p>
+                      <p class="p basket__buy-texts">24%</p>
+                    </div>
+                    <div class="basket__buy-text-boxes">
+                      <p class="p basket__buy-texts">Coupon</p>
+                      <p class="p basket__buy-texts">No</p>
+                    </div>
+                  </div>
+                  <div class="basket__buy-total">
+                    <p class="p basket__buy-total-text">TOTAL</p>
+                    <p
+                      class="p basket__buy-total-text basket__buy-total-text-price"
+                    >
+                      $0
+                    </p>
+                  </div>
+                  <div class="basket__buy-btn-box">
+                    <button class="basket__buy-btn" type="button">
+                      Chek out
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+        </section>
+
+        <section class="basket">
+          <div class="container basket__container">
+            <div class="basket__search">
+              <input
+                class="basket__search-input"
+                placeholder="Search the BASKET"
+                type="text"
+              />
+              <button type="button" class="basket__search-btn">Search</button>
+            </div>
+
+            <div class="basket__product-table">
+              <div class="basket__product-table-menu">
+                <p class="p basket__product-table-menu-text">PRODUCT</p>
+                <div class="basket__product-table-menu-r">
+                  <p class="p basket__product-table-menu-text">PRICE</p>
+                  <p class="p basket__product-table-menu-text">QTY</p>
+                  <p class="p basket__product-table-menu-text">UNIT PRICE</p>
+                </div>
+              </div>
+
+              <div class="basket__main"></div>
+
+              <div class="basket__buy">
+                <div class="basket__buy-text-box">
+                  <div class="basket__buy-text-boxes">
+                    <p class="p basket__buy-texts">Subtotal</p>
+                    <p class="p basket__buy-texts">$0</p>
+                  </div>
+                  <div class="basket__buy-text-boxes">
+                    <p class="p basket__buy-texts">Shipping fee</p>
+                    <p class="p basket__buy-texts">24%</p>
+                  </div>
+                  <div class="basket__buy-text-boxes">
+                    <p class="p basket__buy-texts">Coupon</p>
+                    <p class="p basket__buy-texts">No</p>
+                  </div>
+                </div>
+                <div class="basket__buy-total">
+                  <p class="p basket__buy-total-text">TOTAL</p>
+                  <p
+                    class="p basket__buy-total-text basket__buy-total-text-price"
+                  >
+                    $0
+                  </p>
+                </div>
+                <div class="basket__buy-btn-box">
+                  <button class="basket__buy-btn" type="button">
+                    Chek out
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__top">
+          <div class="footer__site-des-box">
+            <div class="footer__logo-box">
+              <a class="a" href="./index.html"
+                ><img src="./imgs/logojon.svg" alt="site logo"
+              /></a>
+            </div>
+            <p class="p footer__site-des">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever.Since the 1500s, when an unknown printer.
+            </p>
+          </div>
+          <div class="footer__follow">
+            <h2 class="footer__follow-title">Follow Us</h2>
+            <p class="p footer__site-des">
+              Since the 1500s, when an unknown printer took a galley of type and
+              scrambled.
+            </p>
+          </div>
+          <div class="footer__follow">
+            <h2 class="footer__follow-title">Contact Us</h2>
+            <p class="p footer__site-des">
+              E-Comm , 4578 Marmora Road, Glasgow D04 89GR
+            </p>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p class="p footer__bottom-text">
+            © 2023 Preparid By Odilbek Latipov
+          </p>
+          <ul class="footer__bottom-ul">
+            <li>
+              <a class="a footer__bottom-ul-link" href="#"
+                ><img src="./imgs/union.svg" alt="bank"
+              /></a>
+            </li>
+            <li>
+              <a class="a footer__bottom-ul-link" href="#"
+                ><img src="./imgs/master_card.svg" alt="bank"
+              /></a>
+            </li>
+            <li>
+              <a class="a footer__bottom-ul-link" href="#"
+                ><img src="./imgs/paypal.svg" alt="bank"
+              /></a>
+            </li>
+            <li>
+              <a class="a footer__bottom-ul-link" href="#"
+                ><img src="./imgs/visa.svg" alt="bank"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/slide/jquer.js"></script>
+    <script src="./js/slide/slick.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
